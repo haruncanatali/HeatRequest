@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace HeatRequest.API.Migrations
 {
     [DbContext(typeof(HeatRequestAppDbContext))]
-    [Migration("20211025140326_NewMigration")]
+    [Migration("20211026143940_NewMigration")]
     partial class NewMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

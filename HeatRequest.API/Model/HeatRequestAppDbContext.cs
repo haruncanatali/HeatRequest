@@ -8,7 +8,7 @@ namespace HeatRequest.API.Model
 {
     public class HeatRequestAppDbContext:DbContext
     {
-        private readonly string connectionString = "Server=DESKTOP-SL1S3RQ\\SQLEXPRESS;Database=DboHeatRequestApp;Trusted_Connection=True;MultipleActiveResultSets=true";
+        private readonly string connectionString = "Server=DESKTOP-1E3KO5B\\SQLEXPRESS;Database=HeatRequestAppDbo;Trusted_Connection=True;MultipleActiveResultSets=true";
         public HeatRequestAppDbContext(DbContextOptions<HeatRequestAppDbContext> options):base(options)
         {
                 
