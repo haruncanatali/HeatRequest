@@ -27,7 +27,7 @@ namespace HeatRequest.API.Controllers
                 context.Add(new Heat
                 {
                     MakinaId = model.MakinaId,
-                    Sicaklik = model.HeatValue,
+                    Sicaklik = decimal.Parse(model.HeatValue.ToString("0.00")),
                     Tarih = DateTime.Now
                 });
                 context.SaveChanges();
@@ -40,7 +40,7 @@ namespace HeatRequest.API.Controllers
             {
                 return BadRequest(new string[]
                 {
-                    "Basarisiz"
+                    "Basarisiz",e.Message.ToString()
                 });
             }
         }

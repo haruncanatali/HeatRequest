@@ -15,7 +15,7 @@ namespace HeatRequest.API.Model
             builder.Property(c => c.Id).UseIdentityColumn();
 
             builder.Property(c => c.Tarih).IsRequired();
-            builder.Property(c => c.Sicaklik).IsRequired().HasPrecision(4,2);
+            builder.Property(c => c.Sicaklik).IsRequired().HasPrecision(4,2); // toplam 4 virgülden sonra 2
             builder.Property(c => c.MakinaId).IsRequired();
 
             builder.ToTable("Tbl_Heat");
