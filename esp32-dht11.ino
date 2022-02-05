@@ -8,8 +8,8 @@
 
 DHT dht(DHTPIN, DHTTYPE);
 
-const char* wifiAdi = "NetMASTER Uydunet-9D98";
-const char* wifiSifre = "c9fb247c68de60d9";
+const char* wifiAdi = "ag_adi";
+const char* wifiSifre = "sifre";
 
 String apiSicaklikGonder = "https://heatrequest-api.conveyor.cloud/api/values/setValue";
 
